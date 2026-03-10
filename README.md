@@ -22,6 +22,7 @@ code .
 In Windows Terminal (Powershell) run 
 ```bash
 docker exec -it -u vscode <container_id> /bin/bash
+cd /workspaces/my-new-project
 claude
 ```
 See Docker Desktop for container_id
