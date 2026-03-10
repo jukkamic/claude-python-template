@@ -11,7 +11,7 @@ A Devcontainer-ready workspace optimized for AI-driven development, strict envir
 If you have the GitHub CLI (`gh`) installed, you can scaffold and clone a new project in one command:
 
 ```bash
-gh repo create my-new-project --template your-username/your-template-repo-name --clone
+gh repo create my-new-project --template jukkamic/claude-python-template --clone
 cd my-new-project
 code .
 ```
