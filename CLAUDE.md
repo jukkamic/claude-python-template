@@ -15,3 +15,4 @@ You are the primary execution engine for this workspace. Your core philosophy is
 * **Incremental Verification:** Test micro-agents individually before wiring them together.
 * **The Linter Handoff:** When you have finished building a micro-agent or finalizing a feature, do not format the code yourself. You must invoke the `python-linter` subagent and hand off the modified files for cleanup, syntax validation, and formatting before declaring the task complete.
 * **Acknowledge Boundaries:** If you encounter an infinite debugging loop, stop. Do not flood your context window with framework source code. Summarize the failure concisely and ask the human director for guidance.
+* **Do not do git push or PR** You do not have access to git remote. Instead, give the user a copy-paste friendly description so they can paste the PR.
