@@ -2,6 +2,10 @@
 
 A Devcontainer-ready workspace optimized for AI-driven development, strict environmental governance, and micro-agent orchestration using Anthropic's Claude CLI.
 
+### Requirements
+- VS Code with Dev Containers extension
+- Docker Desktop (or compatible runtime)
+
 ## Quick start
 
 If you have the GitHub CLI (`gh`) installed, you can scaffold and clone a new project in one command:
@@ -9,7 +13,17 @@ If you have the GitHub CLI (`gh`) installed, you can scaffold and clone a new pr
 ```bash
 gh repo create my-new-project --template your-username/your-template-repo-name --clone
 cd my-new-project
+code .
 ```
+
+- Open VS Code → it should prompt to "Reopen in Container"
+- If not: Ctrl+Shift+P → "Dev Containers: Reopen in Container"
+
+In Windows Terminal (Powershell) run 
+```bash
+docker exec -it -u vscode <container_id> /bin/bash
+```
+See Docker Desktop for container_id
 
 ## Architectural Philosophy
 
